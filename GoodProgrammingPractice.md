@@ -93,7 +93,7 @@ use a global variable.
  * They make it more difficult to reuse parts of a program in other
 contexts e.g. as useful library such as we'll create shortly.
 
-We'll start with `dX_dt. Let's add arguments to the function, so we
+We'll start with `dX_dt`. Let's add arguments to the function, so we
 know, when looking at the function body, where those values come from:
 
     def dX_dt(X, t, a, b, c, d):

@@ -33,7 +33,7 @@ Python is not typed:
 Like the bash shell, we can use up-arrow in IPython to get to the previous commands executed:
 
     for i in vector: print i
-    vector = 123
+    vector = "123"
     for i in vector: print i
 
 We get an error as an `int` is not iterable. The lack of explicit types can give rise to run-time errors like this, errors that can be caught at compile-time in C or Java.
@@ -207,7 +207,7 @@ We can now use IPython's `timeit` command to see how long it takes to sum up the
 
 And in the array:
 
-    %timeit np.sum(mill_array)
+    %timeit np.sum(mill_parray)
 
 Note that `timeit` is an IPython [magic function](http://ipython.org/ipython-doc/dev/interactive/tutorial.html) not a Python command. This is denoted by the `%` - IPython has *cell magics*, denoted by `%`, which take the rest of the line as an argument, and *line magics*, denoted by `%%` which take the following lines, until a blank line, as arguments. So we can also run the above as:
 
@@ -389,7 +389,7 @@ If we're going to do that, though, we probably ought to tidy up our plots. First
     plt.close()
     plt.figure()
     plt.subplot(1, 3, 1)
-    plt.plot(dates, ave_infection)
+    plt.subplot(dates, avg_infection)
     plt.show()
     plt.subplot(1, 3, 2)
     plt.plot(dates, np.max(patients, 0))
