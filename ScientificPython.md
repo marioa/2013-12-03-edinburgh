@@ -349,7 +349,7 @@ We'll look more at readability in our session on Good programming practice.
 
 The mathematician Richard Hamming once said, "The purpose of computing is insight, not numbers," and the best way to develop insight is often to visualize data. Visualization deserves an entire lecture (or course) of its own, but we can explore a few features of Python's 2D plotting library, [matplotlib](http://matplotlib.org), here. 
 
-When we run IPython with `--pylab` the Matplotlib package, `pyplot`, is already loaded and available under the alias `plt`.
+We will use PyPlot which provides a MATLAB-like interface to matplotlib. When we run IPython with `--pylab` this sets up IPython to use the associated `pyplot` package of matplotlib.
 
 Now let us plot our patient data:
 
